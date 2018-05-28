@@ -51,12 +51,12 @@ nav li {
   padding-left: 10vw;
 }
 @media only screen and (max-width: 600px) {
-  .main-wrapper .col2 {
+  .main-wrapper .flex-grid .col2 {
     width: 100vw;
     display: block;
-    padding-left: 10vw;
+    padding: 0 10vw;
   }
-  .main-wrapper h1, .main-wrapper .text {
+  .main-wrapper .flex-grid h1, .main-wrapper .flex-grid .text {
     text-align: left;
   }
 }
