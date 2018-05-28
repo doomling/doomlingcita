@@ -1,0 +1,151 @@
+/* Coolors Exported Palette - coolors.co/181a1d-e9e9e9-5fcde4-ce51b7-704777 */
+
+/* HSL */
+$eerie-black: hsla(216%, 9%, 10%, 1);
+$platinum: hsla(0%, 0%, 91%, 1);
+$middle-blue: hsla(190%, 71%, 63%, 1);
+$fuchsia-crayola: hsla(311%, 56%, 56%, 1);
+$maximun-purple: hsla(291%, 25%, 37%, 1);
+
+/* RGB */
+$eerie-black: rgba(24, 26, 29, 1);
+$platinum: rgba(233, 233, 233, 1);
+$middle-blue: rgba(95, 205, 228, 1);
+$fuchsia-crayola: rgba(206, 81, 183, 1);
+$maximun-purple: rgba(112, 71, 119, 1);
+$purple: #332137;
+
+$navHeight: 5vh;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Tajawal', sans-serif;
+}
+
+nav {
+  background-color: $eerie-black;
+  height: 5vh;
+  color: $platinum;
+  display: flex;
+
+    li {
+      text-decoration: none;
+    }
+}
+
+.main-wrapper {
+  height: 100vh - $navHeight;
+  background-color: $eerie-black;
+
+  @mixin col {
+    flex: 1;
+  }
+
+  @mixin col2 {
+    width: 50%;
+  }
+
+  @mixin col3 {
+    width: 32%;
+  }
+
+
+
+@keyframes bounce {
+  0% { transform: translateY(-8px); }
+100% { transform: translateY(8px); }
+}
+
+  .flex-grid {
+  display: flex;
+  height: 100%;
+
+    .col {
+      @include col();
+      padding: 0 10vw 10vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding-bottom: 10vh;
+    }
+
+    .col2 {
+      @include col2();
+      background-color: $eerie-black;
+      display: flex;
+      justify-content: center;
+      align-content: flex-start;
+      flex-direction: column;
+      padding-left: 10vw;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .col2 {
+      width: 100vw;
+      display: block;
+      padding-left: 10vw;
+    }
+
+    h1, .text {
+      text-align: left;
+    }
+}
+
+  .octobel {
+    width: 300px;
+    height: auto;
+    animation: bounce 2s alternate ease-in-out infinite;
+    margin-left: -50px;
+    }
+
+  h1 {
+    font-size: 2em;
+    color: $platinum;
+    padding-bottom: 2vh;
+    margin: 0;
+    line-height: 1em;
+    text-align: justify;
+  }
+
+  .text {
+    color:$platinum;
+    text-align: justify;
+  }
+
+  strong, a, a:visited {
+    color: $fuchsia-crayola;
+  }
+
+  a:hover {
+    color: $middle-blue;
+  }
+
+  .skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h2 {
+    color: $platinum;
+  }
+
+  .circle {
+    height: 120px;
+    width: 120px;
+    border: 5px solid $fuchsia-crayola;
+    background-color: $platinum;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 2em;
+
+    img {
+      width: 50px;
+      height: auto;
+    }
+  }
+}
