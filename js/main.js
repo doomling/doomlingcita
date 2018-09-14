@@ -7,5 +7,5 @@ function cursorAnimation() {
 }
 
 $(document).ready(function() {
-  setInterval ('cursorAnimation()', 1000);
+  setInterval ('cursorAnimation()', 2000);
 })
